@@ -5,18 +5,12 @@
 const nome = gets();
 // Para converter os valores inseridos na entrada, utilizamos a função JavaScript parseInt() que converte a parte inicial da string em um número inteiro.
 const nivel = parseInt(gets());
-let guerreiros = [
-  { nome: 'Felipon', nivel: 41 },
-  { nome: 'Agmenus', nivel: 39 },
-  { nome: 'Ellidan', nivel: 25 }
-]
-let guerreiro = guerreiros.find(guerreiro => guerreiro.nome === nome)
 
 // TODO: Implemente a condição necessária para a exibição de cada mensagem
 if (nivel >= 40) {
-  console.log("Parabéns, valente " + guerreiro.nome + "! Sua coragem e habilidade são notáveis!")
+  console.log("Parabéns, valente " + nome + "! Sua coragem e habilidade são notáveis!")
 } else if (nivel >= 30 && nivel < 40) {
-  console.log("Quase lá, " + guerreiro.nome + "! Continue treinando!")
+  console.log("Quase lá, " + nome + "! Continue treinando!")
 } else {
-  console.log("Ainda é cedo, jovem " + guerreiro.nome + ". Treine mais!")
+  console.log("Ainda é cedo, jovem " + nome + ". Treine mais!")
 }
